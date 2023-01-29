@@ -95,7 +95,7 @@ INSERT INTO order_tx_item VALUES
   (16,8,3,2);
 ;
 
--- Search for menu items ordered in descending order
+-- Sorting menu items by descending order of popularity
 WITH sell AS(
 SELECT
   a.tx_id,
@@ -113,7 +113,7 @@ ON b.food_id = c.food_id)
 select name, sum(quantity) AS total_order from sell GROUP BY name
 ORDER BY total_order DESC;
 
--- Find out how much revenue, profit, and cost each transaction has
+-- Calculating revenue, profit, and cost for each transaction
 WITH sell AS(
 SELECT
   a.tx_id,
@@ -139,7 +139,7 @@ SELECT
   FROM sell 
   GROUP BY tx_id);
   
--- Find out which employee takes care of the transaction
+-- Identifying the employee responsible for each transaction
 SELECT
   b.tx_id,
   b.tx_date,
@@ -148,7 +148,7 @@ FROM employee a
 JOIN order_tx b
 ON a.id = b.employee_id;
 
--- How much did each customer spend ?
+-- Tracking customer spending
 WITH sell AS(
 SELECT
   a.tx_id,
@@ -172,7 +172,7 @@ ON a.customer_id = b.customer_id
 GROUP BY customer_name
 ORDER BY total_buy desc;
 
--- Total revenue, cost, profit of each day
+-- Summarizing daily revenue, cost, and profit.
 WITH sell AS(
 SELECT
   a.tx_id,
