@@ -16,8 +16,6 @@ Design a restaurant database with 5 tables :
 
 ## Create queries for
 
-Create queries for :
-
 1.  Sorting menu items by descending order of popularity
 2.  Calculating revenue, profit, and cost for each transaction
 3.  Identifying the employee responsible for each transaction
