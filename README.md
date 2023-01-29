@@ -12,7 +12,7 @@ Design a restaurant database with 5 tables :
 
 ## ER Diagram
 
-![enter image description here](%3Ciframe%20width=%22560%22%20height=%22315%22%20src=%27https://dbdiagram.io/embed/63d6847a296d97641d7cd41b%27%3E%20%3C/iframe%3E)
+![ER Diagram](%3Ciframe%20width=%22560%22%20height=%22315%22%20src=%27https://dbdiagram.io/embed/63d6847a296d97641d7cd41b%27%3E%20%3C/iframe%3E)
 
 ## Create queries for
 
